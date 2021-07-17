@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Page</title>
+</head>
+<body>
+<form action=http://localhost:7001/app5/register>
+	<label>Username</label>
+	<input type="email" name="uname">
+	<br><br>
+	<label>Name</label>
+	<input type="text" name="name">
+	<br><br>
+	<label>Address</label>
+	<input type="text" name="addr">
+	<br><br>
+	<label>Mob</label>
+	<input type="tel" name="mob" pattern="[0-9]{10}" required>
+	<br><br>
+	<label>Pass</label>
+	<input type="password" minlength="8" name="pass" required>
+	<br><br>
+	<input type="submit" value="signup">
+</form>
+<br>
+<a href="register.html">Register here</a>
+&nbsp;&nbsp;
+<a href="log.html">Login here</a>
+</body>
+</html>

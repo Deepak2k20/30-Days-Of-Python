@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Javascript Program</title>
+</head>
+<body>
+	<form>
+		<label>Name</label>
+		<input type="text" name="username"><br><br>
+		<label>Pass</label>
+		<input type="password" name="password"><br><br>
+		<label>Gender</label>
+		<input type="radio" name="Male" value="M">
+		<input type="radio" name="Female" value="F">
+		<button type="button" name="submit">submit</button>
+	</form>
+	<h1>JavaScript Demo</h1>
+	<button onclick="getDate()">date</button>
+	<p id="demo"></p>
+	<p id="deep">JavaScript can change HTML contents</p>
+	<button onclick="changeContent()">click to change content</button>
+	<p id="deepu">How Tough to be a Father.To make great his son/daughter he gives up everything and fulfill all desires of his child.Really very tough this is!</p> 
+	<button type="button" onclick="document.getElementById('deepu').style.fontSize='35px'">click to change font size</button><br>
+	<p id="hide">JavaScript can hide html elements.</p><br>
+	<button type="button" onclick="document.getElementById('hide').style.display='none'">hide elements</button>
+	<p id="show" style="display:none;">Hello Chennai!</p><br>
+	<button type="button" onclick="document.getElementById('show').style.display='block'">Click to show hide elements</button><br>
+
+	<p id="sum"></p><br>
+	<button type="button" onclick="addNum()">click to get sum</button><br>
+	<script type="text/javascript">
+		function getDate()
+		{
+			document.getElementById("demo").innerHTML=Date();
+		}
+		function changeContent()
+		{
+			document.getElementById("deep").innerHTML="Hello JavaScript!";
+		}
+		document.write(4+6);
+		function addNum() {
+			// body...
+			document.getElementById("sum").innerHTML=34+56;
+		}
+		window.alert("Hello JavaScript");
+		console.log(12+4);
+	</script>
+</body>
+</html>
